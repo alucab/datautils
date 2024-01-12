@@ -35,6 +35,7 @@ LABEL org.opencontainers.image.source="https://github.com/alucab/datautils"
 LABEL org.opencontainers.image.title="alucab/datautils"
 LABEL org.opencontainers.image.description="A set of dockerized utilities to elaborate data on the CLI"
 
+RUN apk --no-cache add jq
 
 COPY --from=build /tmpdl/miller-6.10.0-linux-amd64/mlr /usr/local/bin
 WORKDIR /data
