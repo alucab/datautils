@@ -39,4 +39,5 @@ LABEL org.opencontainers.image.description="A set of dockerized utilities to ela
 COPY --from=build /tmpdl/miller-6.10.0-linux-amd64/mlr /usr/local/bin
 WORKDIR /data
 
+
 #ENTRYPOINT  ["/bin/sh"]
